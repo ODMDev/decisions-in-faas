@@ -1,6 +1,8 @@
 # Miniloan in AWS Lambda
 ## A basic decision service deployed and run as a function in AWS
 
+This sample derives from the AWS Java basic sample.
+
 ![Architecture](/sample-apps/java-basic/images/sample-java-basic.png)
 
 The project source includes function code and supporting resources:
