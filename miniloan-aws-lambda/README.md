@@ -24,18 +24,17 @@ Use the following instructions to deploy the sample application.
 # Setup
 Download or clone this repository.
 
-    $ git clone git@github.com:awsdocs/aws-lambda-developer-guide.git
-    $ cd aws-lambda-developer-guide/sample-apps/java-basic
+    $ cd decisions-in-faas/miniloan-aws-lambda
 
-To create a new bucket for deployment artifacts, run `1-create-bucket.sh`. Or, if you already have a bucket, create a file named `bucket-name.txt` that contains the name of your bucket.
+To create a new AWS bucket for deployment artifacts, run `1-create-bucket.sh`. Or, if you already have a bucket, create a file named `bucket-name.txt` that contains the name of your bucket.
 
-    java-basic$ ./1-create-bucket.sh
-    make_bucket: lambda-artifacts-a5e4xmplb5b22e0d
+    miniloan-aws-lambda$ ./1-create-bucket.sh
+    make_bucket: lambda-artifacts-XXX
 
 # Deploy
 To deploy the application, run `2-deploy.sh`.
 
-    java-basic$ ./2-deploy.sh
+    miniloan-aws-lambda$ ./2-deploy.sh
     BUILD SUCCESSFUL in 1s
     Successfully packaged artifacts and wrote output template to file out.yml.
     Waiting for changeset to be created..
@@ -45,7 +44,7 @@ This script uses AWS CloudFormation to deploy the Lambda functions and an IAM ro
 
 You can also build the application with Maven. To use maven, add `mvn` to the command.
 
-    java-basic$ ./2-deploy.sh mvn
+    miniloan-aws-lambda$ ./2-deploy.sh mvn
     [INFO] Scanning for projects...
     [INFO] -----------------------< com.example:java-basic >-----------------------
     [INFO] Building java-basic-function 1.0-SNAPSHOT
@@ -55,7 +54,7 @@ You can also build the application with Maven. To use maven, add `mvn` to the co
 # Test
 To invoke the function, run `3-invoke.sh`.
 
-    java-basic$ ./3-invoke.sh
+    miniloan-aws-lambda$ ./3-invoke.sh
     {
         "StatusCode": 200,
         "ExecutedVersion": "$LATEST"
@@ -107,4 +106,4 @@ Deploy the change, and then use the invoke script to test the new configuration.
 # Cleanup
 To delete the application, run `4-cleanup.sh`.
 
-    java-basic$ ./4-cleanup.sh
+    miniloan-aws-lambda$ ./4-cleanup.sh
