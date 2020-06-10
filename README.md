@@ -1,4 +1,4 @@
-# Decisions on Function as a Service
+# Decisions in Function as a Service
 
 This repository demonstrates the deployment and invocation of decision services developed with IBM Operational Decision Manager in a Function as a Service platform. IBM ODM empowers you to automate your decision making as a function in a FaaS plateform.
 
