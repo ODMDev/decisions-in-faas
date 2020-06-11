@@ -88,6 +88,19 @@ Finally, view the application in the Lambda console.
   "rate": "0.05d"
 }
 ```
+The application is refused.
+Change the credit score to 300 as follows:
+```
+  {
+  "name": "John Dee",
+  "creditScore": "300",
+  "income": "60000",
+  "amount": "100000",
+  "duration": "240",
+  "rate": "0.05d"
+}
+```
+The application is accepted.
       
 # Configure Handler Class
 
