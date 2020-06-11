@@ -76,7 +76,17 @@ Finally, view the application in the Lambda console.
 2. Choose **java-basic**.
 
   ![Application](/sample-apps/java-basic/images/java-basic-application.png)
-
+ """ 
+ You can create a test case in the AWS Lambda console with this payload:
+  {
+  "name": "John Dee",
+  "creditScore": "100",
+  "income": "60000",
+  "amount": "100000",
+  "duration": "240",
+  "rate": "0.05d"
+}
+"""
 # Configure Handler Class
 
 The function uses a handler class named `Handler` that takes a `Map<String,String>` as input and returns a string. 
